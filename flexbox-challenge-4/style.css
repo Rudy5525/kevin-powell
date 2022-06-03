@@ -1,0 +1,131 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p,img,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+:root{
+    --bg-header-clr: #F3EED9;
+    --bg-green-clr: #222C2A;
+    --bg-brown-clr: #824936;
+
+    --font-title-before: 'Roboto Light', sans-serif;
+    --font-title: 'Playfair Display', serif;
+    --font-text: 'Roboto Regular', sans-serif;
+
+    --fs-title-before: 18px;
+    --fs-title-main: 60px;
+    --fs-title-sub: 36px;
+    --fs-text: 21px;
+
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    width: 100%;
+}
+section,header{
+    min-width: 300px;
+}
+.container{
+    width: 80%;
+    max-width: 1128px;
+    margin: 0 auto;
+
+    padding: 8rem 0;
+}
+
+.col{
+    text-align: center;
+    width: 100%;
+}
+.col + .col{
+    margin-top: 5rem;
+}
+.title{
+    font-family: var(--font-title);
+}
+.title__sub{
+    padding: 2.5rem 0;
+
+    font-size: var(--fs-title-sub);
+    font-weight: 800;
+}
+.title--brown{
+    color: var(--bg-brown-clr);
+}
+.title--creamy{
+    color: var(--bg-header-clr);
+}
+
+.title__before{
+    padding-bottom: 2rem;
+
+    font-family: var(--font-title-before);
+    font-size: var(--fs-title-before);
+    letter-spacing: .5em;
+}
+.title__main{
+    font-size: var(--fs-title-main);
+    font-weight: 900;
+    line-height: .9em;
+    color: var(--bg-brown-clr);
+}
+.text{
+    
+    font-family: var(--font-text);
+    font-size: var(--fs-text);
+    line-height: 1.3em;
+}
+.header{
+    display: flex;
+    min-height: 660px;
+    background-color: var(--bg-header-clr); 
+}
+.header__wrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;    
+}
+.section__1{
+    background-color: white;
+}
+.section__1 h2{
+    margin-bottom: 3rem;
+
+    text-align: center;
+}
+.section__2{
+    background-color: var(--bg-green-clr);
+    color: rgba(255,255,255,0.7);
+}
+.section__3{
+    background-color: var(--bg-brown-clr);
+    color:white;
+}
+
+@media only screen and (min-width: 600px){
+    .two-columns{
+        display: flex;
+        justify-content: space-between;
+    }
+    .col{
+        text-align: left;
+    }
+    .col + .col{
+        margin-top: 0;
+        margin-left: 5rem;
+    }
+}
