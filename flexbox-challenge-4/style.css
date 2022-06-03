@@ -18,10 +18,10 @@ h1,h2,h3,h4,p,img,body{
     --font-title: 'Playfair Display', serif;
     --font-text: 'Roboto Regular', sans-serif;
 
-    --fs-title-before: 18px;
-    --fs-title-main: 60px;
-    --fs-title-sub: 36px;
-    --fs-text: 21px;
+    --fs-title-before: 1.8rem;
+    --fs-title-main: 6rem;
+    --fs-title-sub: 3.6rem;
+    --fs-text: 2.1rem;
 
 }
 html{
@@ -40,7 +40,6 @@ section,header{
 
     padding: 8rem 0;
 }
-
 .col{
     text-align: center;
     width: 100%;
@@ -74,28 +73,21 @@ section,header{
 .title__main{
     font-size: var(--fs-title-main);
     font-weight: 900;
-    line-height: .9em;
+    line-height: .9;
     color: var(--bg-brown-clr);
 }
-.text{
-    
-    font-family: var(--font-text);
-    font-size: var(--fs-text);
-    line-height: 1.3em;
-}
 .header{
-    display: flex;
-    min-height: 660px;
     background-color: var(--bg-header-clr); 
 }
 .header__wrapper{
+    width: 100%;
+    min-height: 660px;
+    max-width: 60%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    width: 50%;
+    
     margin: 0 auto;
     text-align: center;    
 }
@@ -114,6 +106,11 @@ section,header{
 .section__3{
     background-color: var(--bg-brown-clr);
     color:white;
+}
+.text{
+    font-family: var(--font-text);
+    font-size: var(--fs-text);
+    line-height: 1.3;
 }
 
 @media only screen and (min-width: 600px){
